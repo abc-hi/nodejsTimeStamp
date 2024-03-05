@@ -5,6 +5,9 @@ import { format } from 'date-fns';
 
 const app = express();
 const PORT = 4000;
+app.get('/',(req,res)=>{
+    res.send("application is running successfully")
+});
 
 app.get('/write', (req, res) => {
     let today = format(new Date(), 'dd-mm-yyyy-HH-mm-ss');
