@@ -6,7 +6,7 @@ import { format } from 'date-fns';
 const app = express();
 const PORT = 4000;
 app.get('/',(req,res)=>{
-    res.send("application is running successfully")
+    res.send("application is running successfully",`${today}`)
 });
 
 app.get('/write', (req, res) => {
