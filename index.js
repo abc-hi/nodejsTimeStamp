@@ -6,7 +6,7 @@ import { format } from 'date-fns';
 const app = express();
 const PORT = 4000;
 app.get('/',(req,res)=>{
-    res.send("application is running successfully",filePath)
+    res.send("Timestamp data has been successfully changed to TimeStamp folder", fs.writeFileSync(filePath, `${today}`, 'utf8'))
 });
 
 app.get('/write', (req, res) => {
