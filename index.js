@@ -13,7 +13,7 @@ app.get('/write', (req, res) => {
     let today = format(new Date(), 'dd-mm-yyyy-HH-mm-ss');
     const filePath = `TimeStamp/${today}.txt`;
     fs.writeFileSync(filePath, `${today}`, 'utf8');
-    res.send(`Timestamp data has been successfully changed to TimeStamp folder. Current time is: ${today}`);
+    res.send('File written successfully.');
 });
 
 app.get('/read', (req, res) => {
